@@ -1,0 +1,21 @@
+{
+  "name": "words",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "author": "tribou",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=6.4.x <7",
+    "npm": ">=4.5.x <5",
+    "yarn": "0.24.5"
+  },
+  "dependencies": {
+    "fetch-ponyfill": "^4.0.0",
+    "timsort": "^0.3.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "yarn": "npm run --silent yarn-bin -- install --ignore-scripts",
+    "yarn-bin": "node bin/yarn-${npm_package_engines_yarn}.js"
+  }
+}
